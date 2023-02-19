@@ -41,6 +41,10 @@ module funcApp 'sites/deploy.bicep' = {
     location: rgLocation
     serverFarmResourceId: svcPlan.outputs.resourceId
     storageAccountId: stg.outputs.resourceId
+    appSettingsKeyValuePairs: {
+      FUNCTIONS_EXTENSION_VERSION: '~4'
+      FUNCTIONS_WORKER_RUNTIME: 'python'
+    }
   }
 }
 

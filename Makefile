@@ -4,7 +4,7 @@ setup:
 
 install:
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		pip install -r core-func/requirements.txt
 
 login:
 	az login --tenant lbmc.onmicrosoft.com --use-device-code &&\
